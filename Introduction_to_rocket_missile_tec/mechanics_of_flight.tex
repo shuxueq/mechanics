@@ -1,0 +1,238 @@
+% ! TEX root = ../mechanics.tex
+\chapter{火箭导弹的飞行力学}
+作用在火箭弹的力有{\color{blue}发动机
+推力$P$，火箭弹重力$G$，总空气动力$R$．}作
+用在火箭弹上主要力矩有{\color{blue}俯仰力
+矩$M_\theta$，偏航力矩$M_\Phi$，滚转
+力矩$M_\gamma$}．
+\begin{note}
+	总空气动力作用在压心上，同时产生空气力矩．
+\end{note}
+火箭弹的运动方程中共有$9$个参数，即
+速度$v$，弹道倾角$\theta$，攻角$\alpha$，俯仰
+角$\Phi$，弹道坐标参数$x$,$y$和时间$t$，共有
+$8$个方程，除时间$t$外，其余参数都可以看成是
+时间$t$的函数．
+\section{火箭弹的弹道}
+\subsection{弹道特性}
+火箭弹的弹道具有两个连续的区段，即
+{\color{blue}主动段和被动段}．
+
+若火箭弹在真空中飞行，无空气动力作用，射程
+$x$则为
+\[
+	x=\frac{v_0^2 \sin 2\theta_0}{g }
+\]
+\begin{note}
+	射程仅仅取决于主动段终点的速度$v_0$和
+	弹道倾角$\theta_0$
+\end{note}
+\section{密集度问题}
+设计精度用对目标的命中概率描述，包含
+{\color{blue}准确度和密集度}两部分．
+{\bfseries 准确度}\index{准确度}是
+指火箭弹炸点散布中心偏离射击指向点的程度．
+{\bfseries 密集度}\index{密集度}是
+各火箭弹炸点围绕散布中心的密集程度．
+\begin{note}
+	密集度高不代表准确度好；准确度好不代表
+	密集度高
+\end{note}
+引起导弹散布的误差根源：
+\begin{equation*}
+	\color{red}
+	\begin{cases}
+		方向密集度
+		\begin{cases}
+			横风的不一致和扰动气流 \\
+			火箭弹离轨时的初始扰动 \\
+			推力偏心和空气动力偏心 \\
+			质量偏心和动不平衡
+		\end{cases} \\
+		距离密集度
+		\begin{cases}
+			火药装药质量不一致        \\
+			火药装药比冲量不一致       \\
+			火箭弹弹体质量不一致       \\
+			火箭弹弹体加工公差引起的比冲量变化 \\
+			飞行过程中阻力变化
+		\end{cases}
+	\end{cases}
+\end{equation*}
+\section{导弹的飞行弹道}
+制导弹道按形成的特点可以分为：
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		用于攻击固定目标的\text{：}整个
+		弹道或大部分弹道在发射前就被制导
+		系统预先确定 \\
+		用于攻击活动目标的\text{：}弹道
+		在发射前不能预先确定，是一种随机弹道
+	\end{cases}
+\end{equation*}
+\begin{notice}
+	弹道式导弹和无控火箭弹弹道的区别是：
+	\begin{enumerate}
+		\item 主动段有控制力和控制力矩
+		\item 被动段不是抛物线形式，而是
+		      椭圆曲线形弹道
+	\end{enumerate}
+\end{notice}
+\subsection{弹道式导弹弹道的分段}
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		主动段
+		\begin{cases}
+			垂直上升段  \\
+			转弯飞行段  \\
+			发动机关车段 \\
+		\end{cases} \\
+		被动段
+		\begin{cases}
+			自由飞行段 \\
+			再入段
+		\end{cases}
+	\end{cases}
+\end{equation*}
+\begin{note}
+	弹道式导弹只在主动段上制导
+\end{note}
+\section{有翼式导弹的弹道}
+有翼式导弹的飞行路线是根据某种
+与目标的相对关系来控制的．
+
+导弹和目标之间的相对运动所
+遵循的规律称为{\color{blue}导引规律}，此时
+的弹道称为{\color{blue}导引弹道}．
+
+导弹与目标的连线称为
+{\bfseries 目标线}\index{目标线}．
+
+导弹速度矢量与目标线的夹角称为
+{\bfseries 导弹前置角}\index{导弹前置角}．
+
+飞行弹道可分为
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		追踪导引弹道\text{：}导弹的速度矢量
+		始终指向目标         \\
+		平行接近法的飞行弹道\text{：}导引过程
+		中目标线在空间的位置始终不变 \\
+		三点法的飞行弹道\text{：}导弹，目标，制导站
+		始终连成一线
+	\end{cases}
+\end{equation*}
+\begin{notice}
+	几种弹道的优缺点：
+	\begin{enumerate}
+		\item 追踪导引弹道：
+		      \begin{enumerate}
+			      \item 优点：\\
+			            简单
+			      \item 缺点：\\
+			            当导弹需要迎面射击目标时，或追踪
+			            近距离高速目标时，可能会出现弯曲度
+			            过大的弹道，导弹要承受过大的载荷
+		      \end{enumerate}
+		\item 平行接近法弹道：
+		      \begin{enumerate}
+			      \item 优点：\\
+			            当导弹迎向目标或近距离高速飞行目标时
+			            ，弹道弯曲程度小，法向过载要求小
+			      \item 缺点：\\
+			            制导系统复杂，实现困难
+		      \end{enumerate}
+		\item 三点法的飞行弹道：
+		      \begin{enumerate}
+			      \item 优点：\\
+			            制导简单，抗电子干扰能力强
+			      \item 缺点：\\ 
+              当导弹迎着目标或近距离高速飞行目标时，
+              弹道弯曲程度大，法向过载要求大
+		      \end{enumerate}
+	\end{enumerate}
+\end{notice}
+\section{导弹的机动性，过载，稳定性及操纵性}
+{\bfseries 机动性}\index{机动性}：指导弹能
+迅速改变飞行速度的大小和方向的能力．
+\begin{note}
+可用导弹在飞行过程中所能产生的切向加速度和
+法向加速度的大小来评定导弹机动性的好坏
+\end{note}
+
+对于有翼导弹，法向机动性取决于法向空气动力的
+大小；对于采用推力控制飞行的导弹，法向机动性
+取决于发动机推力的大小及其可能偏向弹体轴线
+角度的大小．
+
+\begin{notice}
+影响导弹机动性的因素
+\begin{enumerate}
+  \item 导弹的气动特性
+  \item 导弹的质量大小
+  \item 弹道倾角$\theta$的大小
+  \item 飞行的高度．高度越高大气密度越低，
+    法向机动性就要下降．
+  \item 弹翼的面积．弹翼面积越大，法向机动性
+    就越好．
+\end{enumerate}
+\end{notice}
+
+{\bfseries 过载}\index{过载}指作用在导弹
+上外力的大小和导弹重量的比值．
+\[
+  n=\frac{N}{G }
+\]
+\begin{note}
+过载是一个向量，方向与外力$\mathbf{N}$的
+方向一致．是一个无量纲的量．
+\end{note}
+\begin{notice}
+限制导弹过载的因素：
+\begin{enumerate}
+  \item 导弹操纵元件的偏转范围是有限的
+  \item 产生气动法向力的攻角和侧滑角不可能
+    太大，不能超过它们的临界值
+  \item 导弹弹体的结构不允许法向力很大，否则
+    弹体将遭到破坏
+\end{enumerate}
+\end{notice}
+
+{\bfseries 稳定性}\index{稳定性}指导弹在飞行
+过载中，由于受到某种干扰，使其偏离原来的飞行状
+态，当干扰消失后，导弹恢复原来飞行状态的能力．
+\begin{note}
+只要保证气动力的焦点位于质心之后，并且有一段距离，
+就可以保证攻角$\alpha$是稳定的，如果弹上装有自稳定
+系统，则无此要求
+\end{note}
+
+{\bfseries 操纵性}\index{操纵性}指导弹在操纵元件
+发生动作时，改变其原来飞行状态的能力以及对此
+反应快慢的程度．
+\begin{note}
+导弹的稳定性和操纵性时对立统一的
+\end{note}
+\begin{notice}
+稳定性和操纵性的对立统一：
+\begin{enumerate}
+  \item 对立性：\\ 
+    导弹的操纵性越好，导弹就越容易改变其原来的
+    飞行状态;导弹的操纵性越差，导弹就越难改变
+    其原来的飞行状态．因此，提高导弹的操纵性，就
+    会削弱导弹的稳定性，反之亦然．
+  \item 统一性：\\ 
+    静稳定性差或者静不稳定的导弹，则要求自动稳定
+    系统使操纵元件发生动作从而产生操纵力矩，以便
+    对导弹进行操纵，来克服外加干扰维持导弹的稳定．
+    在这种情况下，如果导弹的操纵性好，导弹在自动
+    稳定系统的作用下，能够较快地改变其飞行状态，
+    使导弹快速达到稳定．因此，导弹的操纵性有助于
+    加强导弹的稳定性．
+\end{enumerate}
+\end{notice}
+
+

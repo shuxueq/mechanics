@@ -1,0 +1,517 @@
+% ! TEX root = ../mechanics.tex
+
+\chapter{导弹的控制飞行原理}
+导弹和普通武器的{\color{blue}本质区别}在
+于导弹有制导系统．{\color{blue}制导系统}的基本任务
+是确定导弹与目标的相对位置，操纵导弹飞行，
+在一定的准确度下，引导导弹沿预定的弹道
+飞向目标．
+
+{\bfseries 控制力}\index{控制力}是控制
+导弹质心运动的力．{\bfseries 操纵力}\index{操纵力}是
+操纵导弹绕质心发生
+转动的力．
+\begin{notice}
+	产生和改变控制力的方法:
+	\begin{equation*}
+		\color{titleblue}
+		\begin{cases}
+			 \text{有翼导弹:主要靠空气动力产生
+			控制力}                     \\
+			 \text{无翼导弹:主要靠发动机推力产生
+				控制力}
+		\end{cases}
+	\end{equation*}
+\end{notice}
+用来产生操纵力矩的元件叫做{\color{blue}操纵元件}．
+\begin{note}
+	操纵元件除了产生操纵力矩对导弹起操纵作用
+	外，它还可以对导弹起飞行稳定的作用．
+\end{note}
+
+\section{产生和改变控制力的方法}
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		 利用空气动力来产生和改变控制力
+		\begin{cases}
+			轴对称导弹： & 有两对弹翼，在纵向对称平面           \\
+			       & 和侧向对称平面内
+			都能产生较             \\
+			       & 大的空气动力．  \\
+			面对面导弹： & 弹翼能产生
+			较大的气动力，           \\
+			       & 弹身和尾翼的空气
+			动力较小．
+		\end{cases}   \\
+		 利用发动机推力来产生和改变控制力
+	\end{cases}
+\end{equation*}
+\begin{note}
+	这两种产生和改变控制力的方法的共同特点是:
+	都需要依靠操纵元件使导弹绕质心转动．
+\end{note}
+\begin{notice}
+	直接产生法向控制力的方法
+	\begin{equation*}
+		\color{titleblue}
+		由火箭发动机直接产生法向控制力
+		\begin{cases}
+			 依靠旋转弯管型喷管直接产生法向
+			控制力                \\
+			 依靠侧向喷管直接产生法向控制力
+		\end{cases}
+	\end{equation*}
+\end{notice}
+\section{导弹的操纵元件}
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		 空气动力舵面
+		\begin{cases}
+			 全动舵            \\
+			 位于弹翼或尾翼后缘的舵和副翼 \\
+			 翼尖舵和翼尖副舵       \\
+			 转子副翼           \\
+			 旋转弹翼           \\
+			 扰流片
+		\end{cases} \\
+		 燃气动力操纵元件
+		\begin{cases}
+			 燃气舵               \\
+			 摆动发动机             \\
+			 摆动喷管              \\
+			 摆帽(喷气流偏转器)        \\
+			 燃气挡片              \\
+			 向喷管内喷射气流或液体(二次喷射) \\
+			 旋转弯管型喷管和侧喷管辅助发动机
+		\end{cases}
+	\end{cases}
+\end{equation*}
+\section{导弹制导原理}
+ {\color{blue}制导系统}是完全操纵导弹飞向目标
+任务所有设备的总和．
+从准备发射到摧毁目标经过的三个阶
+段：{\color{blue}发射控制，飞行控制，爆炸控制}．
+\begin{note}
+	控制系统的任务:操纵导弹执行引导系统发出的控制
+	指令，控制导弹飞行目标．保证导弹在每一飞行段的
+	稳定性．
+\end{note}
+\begin{align*}
+	\color{titleblue}
+	导弹的控制通道
+	\begin{cases}
+		 三通道控制
+		\begin{cases}
+			 俯仰 \\
+			 偏航 \\
+			 倾斜
+		\end{cases} \\
+		 双通道控制
+		\begin{cases}
+			 俯仰 \\
+			 偏航
+		\end{cases}
+	\end{cases}
+\end{align*}
+\subsection{制导系统的分类}
+\begin{equation*}
+	\color{titleblue}
+	制导系统
+	\begin{cases}
+		 自寻的系统
+		\begin{cases}
+			 主动式\text{：雷达，声学原理}         \\
+			 半主动式\text{：雷达，激光}          \\
+			 被动式\text{：雷达，红外，光学原理，声学原理}
+		\end{cases} \\
+		 遥控制导系统
+		\begin{cases}
+			 波束制导
+       \begin{cases}
+         无线电波束制导系统
+         \text{：导弹自动沿雷达波束飞行}\\ 
+         激光波束制导系统
+         \text{：不易被干扰，精度高}
+       \end{cases}\\
+			 遥控指令制导\text{：目视，雷达，电视} \\
+			 无线电制导                 \\
+			 全球卫星制导
+		\end{cases}      \\
+		 自主制导
+		\begin{cases}
+			 惯性系统    \\
+			 天文系统    \\
+			 多普勒雷达系统 \\
+			 地形匹配系统
+		\end{cases}                  \\
+		 复合制导系统
+		\begin{cases}
+			 自主+自动寻的系统    \\
+			 自主+遥控系统      \\
+			 遥控+自动寻的系统    \\
+			 自主+遥控+自动寻的系统
+		\end{cases}
+	\end{cases}
+\end{equation*}
+\subsection{导弹的控制方式}
+\begin{equation*}
+	\color{titleblue}
+	控制方式
+	\begin{cases}
+		 单通道控制，导弹自旋，一字舵面      \\
+		 双通道控制，相互垂直的俯仰和偏航通道控制 \\
+		 三通道控制，俯仰，偏航，倾斜三个通道控制
+	\end{cases}
+\end{equation*}
+制导系统的基本要求如下
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		 制导准确度(脱靶量)
+		\begin{cases}
+			 系统误差 \\
+			 随机误差
+		\end{cases}    \\
+		 制导系统对目标的鉴别能力 \\
+		 制导系统的可靠性     \\
+		 制导系统的抗干扰能力
+	\end{cases}
+\end{equation*}
+\begin{note}
+	制导系统的制导误差主要取决于制导
+	系统的动态误差，起伏误差，仪器误差．
+\end{note}
+\subsection{制导系统必须具备的功能}
+\begin{enumerate}
+	\item 导弹在飞行目标的过程中，要不断地
+	      测量导弹的实际运动与理想运动之间的
+	      偏差
+	\item 根据偏差大小和方向形成控制指令，将
+	      指令送到操纵元件，控制导弹改变运动状
+	      态，消除该偏差
+	\item 稳定导弹运动姿态角，使导弹始终保
+	      持所需的姿态角
+\end{enumerate}
+\subsection{制导系统的组成}
+{\bfseries 制导系统}是导引系统和控制系统的总称．
+\begin{equation*}
+	\color{titleblue}
+	导引系统
+	\begin{cases}
+		测量装置 \text{:}& 测量目标和导弹的运动参数    \\
+		程序装置  \text{:}&储存和发生使导弹按照预先规定
+		的程序运动的参数和指令                    \\
+		解算装置 \text{:}& 将测量装置测得的信息差经计算和
+		变换后，形成控制指令信息输送给                \\
+		     & 控制系统
+	\end{cases}
+\end{equation*}
+\begin{equation*}
+	\color{titleblue}
+	控制系统
+	\begin{cases}
+		敏感装置 \text{:} & 感受和测量导弹的姿态角信息
+		及重心运动信息                             \\
+		综合装置  \text{:}& 将导引系统送来的信息与敏感装置
+		送来的信息加以总和，                          \\
+		      & 形成对导弹综合控制指令信息               \\
+		放大变换器\text{:} & 将综合装置送来的指令信息进行
+		校正，变换和功率放                           \\
+		      & 大，使之称为推动执行机构工作的
+		指令信息                                \\
+		执行机构 \text{:} & 舵机与操纵元件组合的总称称为执行机构，
+		它能根据指                               \\
+		      & 令信息驱动操纵元件动作
+	\end{cases}
+\end{equation*}
+\section{自主制导系统}
+自主制导系统的基本原理
+是:{\color{blue}按照发生前预先规定的程序或外界
+固定的参考点作为基准来将导弹自动地导向目标}．
+程序由导弹运动学参数与时间参数的一组固定关系组
+成．固定的参考点可以利用卫星，星球，地理条件等．
+\begin{note}
+	自主自导系统的引导指令仅由弹上制导设备敏感
+	地球或宇宙空间物质的物理特性产生，不与目
+	标，制导站发生关联．
+\end{note}
+\subsection{测量，敏感装置}
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		 陀螺仪
+		\begin{cases}
+			 定位陀螺仪，三个自由度，可测量
+			两个方向的角偏移              \\
+			 速率陀螺仪，两个自由度，可测量导弹
+			绕某一坐标轴的角速度            \\
+			 积分陀螺仪，可测量一个方向上的角偏移
+		\end{cases} \\
+		 飞行高度表
+		\begin{cases}
+			 气压式高度表，绝对高度 \\
+			 无线电高度表，相对高度
+		\end{cases}        \\
+		 加速度计              \\
+	\end{cases}
+\end{equation*}
+\begin{note}
+	绝对高度是指到海平面的高度;相对高度是距
+	地面的高度
+\end{note}
+陀螺仪的组成
+\begin{equation*}
+	\color{titleblue}
+	\begin{cases}
+		 转子，高速旋转，可绕轴转动    \\
+		 内环架，通过轴和轴承固定在外环上 \\
+		 外环架，通过轴和轴承固定在支架上
+	\end{cases}
+\end{equation*}
+\begin{notice}
+	陀螺仪的特性
+	\begin{enumerate}
+		\item {\bfseries 定轴性}:陀螺转子在惯性空间的
+		      方位保持不变
+		\item {\bfseries 进动性}:在主轴垂直的方向上
+		      施加一外力矩$M$，则陀螺要绕着与外力
+		      矩垂直的的方向转动
+	\end{enumerate}
+\end{notice}
+干扰力矩的存在会引起转子轴缓慢的进动，
+这个现象叫做陀螺
+的 {\bfseries 漂移}\index{漂移}．
+\begin{notice}
+	使陀螺发生漂移的原因：
+	\begin{enumerate}
+		\item 轴承与传感器之间存在摩擦
+		\item 陀螺仪本身制导的不对称和不平衡
+	\end{enumerate}
+\end{notice}
+陀螺仪缓慢进动的角速度称为{\color{blue}漂移率或漂移
+角速度}．
+\begin{notice}
+	减小漂移率的方法：
+	\begin{enumerate}
+		\item 增加转子的动量矩
+		\item 减小干扰力
+	\end{enumerate}
+\end{notice}
+\subsection{惯性制导系统}
+{\color{blue}惯性制导}系统是利用导弹上的惯性
+仪表来测量导弹的速度和坐标从而
+形成指令信息来导引导弹的系统．
+\begin{equation*}
+  \color{titleblue}
+  惯性制导系统
+  \begin{cases}
+    平台制导系统，将加速度计安装在
+    陀螺稳定平台上\\ 
+    捷联制导系统，将加速度计与导弹固连
+  \end{cases}
+\end{equation*}
+\begin{notice}
+  捷联制导系统的优缺点：
+  \begin{enumerate}
+    \item 优点：\\ 
+      简化了系统，可靠性高
+    \item 缺点：\\ 
+      由于加速度计与导弹固连而
+      处于相当苛刻的振动环境中，
+      影响制导精度
+  \end{enumerate}
+\end{notice}
+惯性制导系统
+{\color{blue}完全自动地控制导弹飞行，具有
+优秀的抗干扰能力}．但是，该系统中陀螺仪
+{\color{blue}存在
+漂移误差，该误差会积累}．
+
+\subsection{天文制导系统}
+利用测量恒星的方法来确定导弹的位置，一般
+测量两颗恒星的位置．
+
+天文制导系统完全自动化，不受外界的干扰．
+
+\subsection{多普勒雷达制导系统}
+多普勒制导系统往往用于复合制导系统中，用
+来校正其他系统的误差．
+
+\subsection{地形匹配系统}
+利用某已知地区的地形特征作为标志，根据导弹
+当下弹道测量的地形特征和预定弹道下的地形
+特征做比较，来校正导弹的弹道，使导弹按照预定
+路线导向目标．
+\begin{note}
+不能用于没有地形差别的海平面和平原地区．
+\end{note}
+\section{遥控制导系统}
+{\color{blue}遥控制导系统}是由导弹以外的制导站
+向导弹发送引导信息的制导系统．
+\begin{equation*}
+  \color{titleblue}
+  遥控制导系统
+  \begin{cases}
+    指令制导系统
+    \begin{cases}
+      有线指令系统\\ 
+      无线电指令系统
+      \begin{cases}
+        目视\\ 
+        雷达自动跟踪
+      \end{cases}\\ 
+      电视指令系统
+      \begin{cases}
+        优点\text{:导引精度高}\\ 
+        缺点\text{:容易受敌方干扰和天气影响}
+      \end{cases}
+    \end{cases}\\ 
+    波束制导系统\\ 
+    无线电导航制导系统
+  \end{cases}
+\end{equation*}
+
+\begin{notice}
+遥控制导系统的优缺点：
+\begin{enumerate}
+  \item 优点：\\ 
+    制导精度高，制导距离比自寻的系统稍远，弹
+    上制导设备简单
+  \item 缺点：\\ 
+  制导精度随导弹离制导站的距离增大而
+    减小，且易受外界干扰
+\end{enumerate}
+\end{notice}
+多用于地空，空空，空地导弹．
+
+指令制导系统的组成
+\begin{equation*}
+  \color{titleblue}
+  指令制导系统
+  \begin{cases}
+    观测装置\\ 
+    指令形成装置\\ 
+    控制线
+  \end{cases}
+\end{equation*}
+
+电视导引系统的分类
+\begin{equation*}
+  \color{titleblue}
+  \begin{cases}
+    自动寻式的电视制导系统\\ 
+    遥控式的电视指令制导系统
+  \end{cases}
+\end{equation*}
+\section{自动寻的制导系统}
+{\color{blue}自动寻的制导系统}是
+目标辐射或反射的能量导引导弹去攻击
+目标．
+\begin{note}
+自动寻的制导系统要求背景有足够的
+能量对比性
+\end{note}
+\begin{notice}
+自动寻的制导系统的三种类型：
+\begin{enumerate}
+  \item 主动式：\\ 
+    照射目标的能源在导弹上，并且导弹接受
+    目标反射回来的能量
+  \item 半主动式：\\ 
+    照射目标的能源在地面制导站或者其他位
+    置，导弹上只有接收装置，制导距离比主动式
+    大
+  \item 被动式：\\ 
+    目标本身就是辐射能源，不需要发射装置，弹上
+    只有接受装置，导引头接受辐射能量
+\end{enumerate}
+\end{notice}
+雷达自动寻的制导系统分类
+\begin{equation*}
+  \color{titleblue}
+  \begin{cases}
+    半主动式\text{：接收装置在导弹上}\\ 
+    主动式\text{：发射和接收装置都在导弹上}
+  \end{cases}
+\end{equation*}
+\begin{note}
+缺点是容易受干扰
+\end{note}
+红外自动寻的制导系统分类
+\begin{equation*}
+  \color{titleblue}
+  \begin{cases}
+    半主动式\text{：接收装置在导弹上}\\ 
+    主动式\text{：发射和接收装置都在导弹上}
+  \end{cases}
+\end{equation*}
+\begin{equation*}
+  \color{titleblue}
+  \begin{cases}
+    红外点源\text{：将目标看成是一个点}\\ 
+    红外成像制导系统\text{：将目标的形状用红外绘制出来}
+  \end{cases}
+\end{equation*}
+\begin{note}
+红外导引头由红外探测系统和电子线路两部分组成．
+\end{note}
+
+激光自动寻的制导系统接收的是来自
+激光发射器照射目标的反射激光，多用于半
+主动式自动寻的制导系统中．
+
+电视自动寻的制导系统的主要部件是
+一部电视摄像机．
+\begin{note}
+电视自寻的制导系统具有被动式自动寻的制导
+系统的优点，抗干扰性较强，隐蔽性好．
+\end{note}
+\section{舵机}
+导弹控制系统的{\color{blue}执行机构}是根据控制指令信息来
+驱动舵机带动操纵元件使弹体作出相应的姿态变
+化．
+\begin{equation*}
+  \color{titleblue}
+  舵机
+  \begin{cases}
+    气压式
+    \begin{cases}
+      冷气式舵机\text{：能源是贮存在容器中的
+      压缩气体}\\ 
+      燃气式舵机\text{：以燃气作为能源}\\ 
+    \end{cases}\\ 
+    液压式\text{：用一定压力的液压油作为舵机的能源}\\ 
+    电磁式\\ 
+    电动式\text{：主要是一台电机和减速装置}
+  \end{cases}
+\end{equation*}
+\begin{notice}
+几种舵机的优缺点
+\begin{enumerate}
+  \item 气压式舵机： 
+  \begin{enumerate}
+    \item 优点：\\ 
+      简单，工作可靠
+    \item 缺点：\\ 
+      延时较大，快速性较差
+  \end{enumerate}
+\item 液压式舵机：
+  \begin{enumerate}
+    \item 优点：\\ 
+      延时小，功率大，响应速度快
+    \item 缺点：\\ 
+      比其他舵机结构复杂，成本高
+  \end{enumerate}
+\item 电磁式舵机: 
+  \begin{enumerate}
+    \item 优点：\\ 
+      结构简单，重量轻，需要的能量
+      小，可靠性高
+    \item 缺点：\\ 
+      输出功率小
+  \end{enumerate}
+\end{enumerate}
+\end{notice}
+
